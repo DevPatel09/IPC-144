@@ -1,0 +1,60 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #8
+Full Name  : Dev Kshitij Patel
+Student ID#: 142979228
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+
+Answer 1) Increased flexibility and usability are two advantages of creating functions that return values via an argument and/or via return. The user may decide whether they want to utilise the return value or directly get the value by providing the option to return values through function parameters. This gives flexibility to programmers with diverse coding tastes and enables them to utilise the function in a way that suits their needs or coding preferences.
+
+For instance, the functions getIntPositive and getDoublePositive in the provided code both provide the legal input value as the return value and also assign it to the pointer parameter. With this layout, users may decide whether they want to get the value through the pointer argument or straight from the return statement. Some programmers might find it more easy to utilise the return value directly, while others might prefer to use the argument to directly change an existing variable.
+
+Having functions that operate in this way has certain drawbacks, including the potential for misunderstanding and abuse. A function that both returns a value and alters an argument may cause ambiguity and increase the likelihood of programming errors. It might be difficult to know which value to rely on or utilise, especially if you are new with the code. In addition to adding needless complexity, this design could also make it more difficult to maintain and debug the code.\
+
+It is typically advised to have functions use a consistent method of returning values, whether through the return statement or function parameters, to prevent confusion and ensure code readability. This maintains clarity and makes it easier to comprehend how values are returned from a function.
+
+
+Answer 2)The calculateReportData function is one that exhibits imperfect coherence in the workshop. This method conducts computations for several characteristics of the ReportData struct in addition to producing a reporting detail record based on the cat food product data.
+
+The calculation logic ought to be broken up into specialised functions that deal with certain computations to increase cohesiveness. To compute the product weight in kilogrammes, convert pounds to grammes, determine the number of servings, determine the cost per serving, and determine the cost per calorie, for instance, different functions might be developed. The calculateReportData method would then call each of these specific functions to fill up the corresponding fields of the ReportData struct.
+
+The calculateReportData function is now entirely responsible for determining the reporting detail record as a result of the computations being divided into separate functions. By ensuring that the function has a single, clearly defined purpose, this enhances its cohesiveness and lessens the complexity of the function as a whole.
+
+The start function shows some connection in this regard, however it may be improved. Right now, the loop that fills the cat1 and Data arrays is called immediately by the start function, which also runs the getCatFoodInfo and calculateReportData routines. As a result, there is a close linkage between these particular functions and the start function.
+
+The start function might be altered to take function pointers as arguments for the data fetching and computation operations to enhance coupling. The start function would use the function pointers given to invoke the functions rather than simply calling getCatFoodInfo and calculateReportData. The start function is made more flexible and general in this way, enabling the interchangeability of other data retrieval and calculating routines.
+
+The start function becomes more robust when the individual functions are separated from it and function pointers are used.
+
+Answer 3)Passing structures to functions has certain benefits:
+
+Data encapsulation: Structures make it possible to bring together relevant data, making it simpler to handle and work with the data as a whole.
+Functions can be used on the specified structure, improving the modularity and reusability of the code.
+Reduced parameter lists: When sending structures as parameters, the parameter list is made simpler and there are less data-passing problems.
+
+Efficiency gains when providing structure data to functions:
+
+To minimise needless copying and save memory, pass structures by reference using pointers.
+To optimise and guarantee data integrity, use const qualifiers for structure parameters that are not changed by the function.
+If just a piece of the data is required, pass subsets of the structure or certain characteristics as parameters to minimise memory and processing requirements.
+The displayCatFoodData method might need the following improvement:
+To obtain the necessary properties without passing separate parameters, modify the method to take a single parameter of type struct CatFoodInfo. This boosts productivity, encapsulates the data, and makes the code easier to read.
+
+
+
+
+
+
+
+
+
+
+
+
+

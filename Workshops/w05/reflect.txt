@@ -1,0 +1,49 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #5
+Full Name  : Dev Kshitij Patel
+Student ID#: 142979228
+Email : dkpatel59@myseneca.ca
+Section : ZBB
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+WORKSHOP 5 REFLECT:
+
+Answer 1: Using variables and macros in place of hardcoded magic numbers has a number of advantages. 
+To begin with, providing values meaningful names makes the code easier to read, maintain, and comprehend.
+ Another advantage is flexibility and adaptability, as changing the variable or macro definition enables changing 
+a value rather than having to search and change hardcoded values. This improves the effectiveness of altering 
+and personalising the code. Finally, by condensing values that are used in many places, it improves the ability 
+to reuse code by reducing repetition and the possibility of errors. In general, using variables and macros improves
+ the comprehension of code, makes changes easier, and encourages the creation of effective, reusable code.
+
+Answer 2: Due to two different factors, it is preferable in the context of this workshop to place the total and average
+ logic outside of the validation routine. We adhere to the idea of separation of concerns by building a separation 
+between the validation process and the logic used to calculate sums and averages. Verifying that the user's rating 
+values fall inside a specific range is the main goal of the validation method. Our design will remain organised and distinct
+ if we solely focus on confirming the range. It would be unnecessary difficult to include the logic for sum and average in 
+the validation method, and it would also be unclear what the code is in charge of.It is easier to maintain, test, and comprehend 
+each component when the concerns are separated.
+
+The potential for use and further development of the code is increased when the sum and average logic is removed from the 
+validation process. In different areas of the code where it is important to check the range, the procedure of verifying can be done 
+on its own. Nevertheless, there are more situations besides only the process for verification where the sum and average logic can 
+be applied. Instead of just applying the user-entered rating numbers, this tool can calculate the sum and mean value of any data set.
+The code can be reused more effectively, duplication can be reduced, and there is flexibility for future growth and changes without 
+affecting the validation process when a modular design strategy is adopted.
+
+Because concerns are divided and code reuse and extension are encouraged, the workshop's design becomes more flexible, maintainable, 
+and responsive to future requirements or modifications.
+
+
+
+
+
+
+
+

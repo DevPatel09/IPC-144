@@ -1,0 +1,93 @@
+/*/////////////////////////////////////////////////////////////////////////
+                        Assignment 1 - Milestone 3 (Reflect)
+Full Name  : Dev Kshitij Patel
+Student ID#: 142979228
+Email      : dkpatel59@mysenenca.ca
+Section    : ZBB
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+/////////////////////////////////////////////////////////////////////////*/
+
+
+REFLECTION:-
+
+ANS 1) In this milestone, i have use 3 functions which was not mentioned, which 
+are: 
+1. void sortingAppointments(struct Appointment appointments[], int maxAppointments);
+2. int verifyTimeSlot(const struct Date date, const struct Time time, const struct Appointment* App, int MaxAppointments);
+3. int vacantNextSlot(struct Appointment* App, int MaxAppointments);
+
+The first function [void sortingAppointments(struct Appointment appointments[], int maxAppointments); ] has an argument as 
+Appointment which is a structure and the second argument is maximum number of appointments. The purpose of using this function
+is basically to sort the appointment records based on their date and time. For ease of comparison, the function first 
+converts the date and time values into a standard unit of minutes. It then compares and swaps appointment records based on 
+their converted time values using the bubble sort method. When examining the appointment schedule, sorting the appointments 
+makes it simpler to display them chronologically. By displaying the information in a clear and logical way, this improves 
+the user experience.
+
+The second function [int verifyTimeSlot(const struct Date date, const struct Time time, const struct Appointment* App, int MaxAppointments); ] 
+has an argument as Date which is a structure, Time which is also a structure, Appointment pointer which is also known as array of
+Appointment structures, and the MaxAppointments as the parameters. This function's goal is to determine whether an appointment time slot is open.
+The function checks the supplied date and time with the dates and times of each appointment as it iterates through the array of appointments. 
+If a match is discovered, the time slot is not open. This function is utilized during the appointment-adding procedure. By making sure a time slot 
+is available before adding a new appointment, it helps avoid scheduling conflicts.
+
+The third function [int vacantNextSlot(struct Appointment* App, int MaxAppointments);] has an arguments has pointer Appointment and the 
+MaxAppointments. Finding the next open appointment in the list of appointments is the aim of this function. The function searches for the first appointment 
+slot with a PatientNumber value less than 1, indicating a vacant slot, while it iterates over the array of appointments. The procedure of adding new 
+appointments depends heavily on this function. It pinpoints the following empty time slot where a new appointment can be added without 
+erasing previous information.
+
+Moreover, There are two functions which i wrote additionally for the better understanding of the milestone and can run properly. They are
+-> int validAppointment(int PatientNumber, struct Date date, struct Appointment* App, int MaxApp);
+-> struct Date convertDaysToMonth(void);
+
+The purpose of using the validAppointment function is to check if a valid appointment exits for a given patient and date. It iterates through
+the array of appointments, while checking the patient number, date, and time. If there is a found, it returns the index of that appointment.
+It also determines whether an appointment exits for a specific patient and on that date.
+
+Secondly, struct Date convertDaysToMonth(void) , this function is used to count number of days as input and convert it into corresponding 
+month and day within that respective month.
+
+
+ANS 2) There are many purposes of minimizing use of scanf, but the major purpose is the input buffer issues.
+When we use scanf, there is a new line character, which may be an issue in the input buffer. Sometimes complex inputs like dates and times must
+be read by the programming. The code can handle these complex inputs better and send the proper error messages when necessary by using unique 
+input functions and reducing scanf. Moreover, by using some functions which contain clear input buffer function helps to reduce the use of 
+scanf function and ensure that the input buffer is cleared properly. These functions are inputIntRange, inputCharOption and many more. 
+
+The code can increase the accuracy of input processing and offer a more user-friendly interface by utilizing these bespoke input functions and 
+reducing the use of scanf. This strategy is especially crucial for interactive systems like the one shown in the code, since user input is a key 
+factor in determining how the program behaves.
+
+
+ANS 3) As mentioned earlier, there are three functions which i used in the clinic.c file. 
+
+a)The first function is sortingAppointmnet, which i have in viewAppointmentSchedule(struct ClinicData* data) function. Since it is important to 
+sort the appointments before displaying out. Thatswhy i have used it. Secondly, The decision to use the sortingAppointments function here likely 
+stems from the need to present the appointment records in chronological order based on their date and time. The factors which i consider it to 
+display appointments in chronological order, starting from the earliest. This overall helps the user or the patient to view the appointments 
+based on their order for example, on the specific day and time, hence reducing the chaos. Therefore, it meets the user expectation and helps
+to reduce the obstacle.
+
+b)The second function is verifyTimeSlot, which i have used in void addAppointment(struct Appointment* App, int MaxApp, struct Patient* patients, int MaxPatients)
+.It helps user to check whether a given time slot is valid and available for scheduling an appointment. The choice to utilize the verifyTimeSlot function in this 
+case was probably made in order to make sure that appointments weren't scheduled in a way that interfered with already-scheduled ones or went against the clinic's 
+operational guidelines. The factor that contributed to this decision is that to avoid conflicts, because Scheduling conflicts are one of the main things that 
+the verifyTimeSlot function aims to avoid. You can avoid scheduling two appointments at the same time, which could cause confusion and operational problems, 
+by checking the availability of a time slot. Preventing overlapping appointments is also the factor that i consider.
+
+
+
+c)The third function is vacantNextSlot, which i have used in void addAppointment(struct Appointment* App, int MaxApp, struct Patient* patients, int MaxPatients)
+It helps user to find the next available time slot for scheduling an appointment. The decision of using this function is the need of efficiency manage
+and allocate appointment slots based on patient's reference. The factors contributed to this decision is the accommodating patient preferences. For
+example, user wants their specific time that too be consider. So in this case, this funcion comes to play.
+
+
+
+
+

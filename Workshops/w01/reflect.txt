@@ -1,0 +1,19 @@
+IPC Workshop 1 Project-2
+Reflection.
+
+1)Yes, I have experienced the programming languages such as C programming, Java and Python. I found  them
+intreseting and with the time, I have noticed that this languages attracts me and i want to learn
+and explore new things in this programming world.
+
+2)There are a lot of processes that happens between the C text file into a excetuable program. It went to 
+following steps: 1)Scanning of the source code and then compilation is done into assembly language.
+                 2)Machine code is formed form the assembly language.
+                 3)It follows to the linking process where the file is formed.
+During this process, it also checks the errors in the source code and display on the screen so that programmer
+get to know about their mistakes.
+
+3)This course is very important which helps to strengthen my basics in C language. It provide solid foundation
+which will help me further in other languages. Talking about my goals, the first one is to learn everything 
+about C language whether it's a short topic or a long one. There are other goals such as to solve problems in 
+real world and want to adapt new technologies and get to learn about them. Technologies and it's accessories 
+changes with time, so my expectation is to learn and get to know them with passing time.

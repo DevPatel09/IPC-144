@@ -1,0 +1,14 @@
+In line number 48 of your output:
+The output should be:
+Looks like we still need some PEARS...
+    ^
+But your output is: 
+Look like we still need some pears...
+    ^
+
+Unmatched character details:
+The character in column 5 is supposed to be:
+  [s] ASCII code(115)
+but you printed
+  [Space] ASCII code(32)
+

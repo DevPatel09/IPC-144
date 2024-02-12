@@ -1,0 +1,54 @@
+///////////////////////////////////////////////////////////////////////////
+                              Reflection
+                          Workshop - #3 (P2)
+Full Name  : Dev Kshitij Patel
+Student ID#: 142979228
+Email      : dkpatel59@myseneca.ca
+Section    : ZBB
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+
+Answer 1) There are two customer preference table, the code difference between two table is the variable name. Logical and Relational 
+operators are the same. The code containing the logical and relational expression is: 
+
+printf(" 1|       %d         |      %d      |   %d   |\n",((c1_type == 'l' || c1_type == 'L') && (coffee_strength1 == 'l' || coffee_strength1 == 'L')), number_of_servings1 >= 1 && number_of_servings1 <= 4, ((c1_cream == 'y' || c1_cream=='Y') && (coffee_with_cream1 == 'y' || coffee_with_cream1 == 'Y')) || ((c1_cream == 'n' || c1_cream == 'N') && (coffee_with_cream1 == 'n' || coffee_with_cream1 == 'N')));
+
+This is the same for the second preference table , only the variable changes. I have pasted the customer preference of the table one, which deals with c1_type.
+
+a) I have used 3 distinct relational expressions.
+     1) '==' symbol is used to make comparison between two values.This expression tells us that the left operand is equal to the right operand. This is utilised to make comparison between two variables, numbers
+         , arrays and string.
+    2) '>=' symbol is used to make comparison between two values. This expression tells us that the left operand is greater than or equal to the right operand. 
+    3) '<=' symbol is used to make comparison between two values. This expression tells us that the left operand is less than or equal to the right operand.
+
+b) I have used 2 distinct logical expressions.
+     1) '&&' logical operator checks that if BOTH the left operand and the right operand are the same, then it returns to value 1 ,else if not same then false (0).
+     2) '||' logical operator checks that if ONE of the operand is true then it returns to value 1, else 0.
+   LOGICAl operator connects two RELATIONAL operator.
+
+Answer 2) The product 9 line is: printf("9. Based on product ID, product 3 is unique -> %d\n\n", (id3 != id1) && (id3 != id2));
+. Here we can get the same output by doing two ways, one applying DeMorgan's Law and other way is not using DeMorgan's
+Law . I have not used DeMorgan's Law. DeMorgan's Law is used when there is both logical and relational operator in the same 
+line. 
+
+My expression is : (id3 != id1) && (id3 != id2)  ----> without DeMorgans Law
+Other Way is: !((id3 == id1) || (id3 == id2))     -----> with DeMorgans Law .
+
+In DeMorgan's Law, != is converted to == by taking not (!) outside , but by doing this the logical operator (&&) is substituted 
+to || (or) . SInce by also using this , we can get the same output.
+
+Answer 3) Variables are defined in two ways . 
+ a) One way is to define variable according to its naming convention that clearly identifes the purpose of each variable.
+ This is the easy way to define the variables and the most important that the programmer get to know better what data
+is being put in that specific variable. For example: I have used the variable c1_type that means type of coffee 1 which the
+user prefer to take whether is it light, medium or rich. The another example is c1_cream that defines that whether the 
+user preference is cream or not in the coffee 1.
+
+b) The another way is to group the variables together into the data structures such as array. In future, this will be more 
+used because with the passing time, the length of code will increase so it will be better to manage the data in array.
+The advantage of this is that it reduces the number of individual variables. Currently, this method is not used in this code.

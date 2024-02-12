@@ -1,0 +1,46 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #4
+Full Name  : Dev Kshitij Patel
+Student ID#: 142979228
+Email : dkpatel59@myseneca.ca
+Section : ZBB
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+Workshop 4 reflect: 
+
+Ans 1)- When indentation is used and the code layout is consistent, nested blocks of code are easier to comprehend.
+- When variables and functions have evocative names, it is similar to comprehend the function and behaviour of various
+ code parts.
+- Selection enables the programme to make choices and employ reasoning in statements, selection is a crucial programming notion.
+Without selection, programmes can only run from beginning to end without being able to perform a variety of alternative sequences.
+- Making efficient use of white space, such as introducing new lines and leaving spaces between symbols, can increase 
+ legibility.
+- Code is more legible and intelligible when line length is restricted and comments are used sparingly.
+- Regularly examining and reorganising code can make it easier to read and manage.
+- I have used "if" statement to check whether the user is entering the amount of items is equal to, greater than or less than the number of items that 
+the user had picked earlier.
+- I have also used "else if" statements just after the "if" statements to check the condition , if this is true then print the statements which are there in
+else if body case.
+
+This method makes it easier to understand and maintain the code because it includes the iteration, sequence and condition,
+ especially in the sections involving iteration in the selection logic.
+
+Ans 2) - Nested logic, which enables programmers to organise and organise their code in a logical manner, is significantly used in programming.
+- If nesting is not employed, code organisation would become challenging, leading to longer and more complex code files.
+- Conditional statements and algorithms that significantly rely on nested structures are excuted in part thanks to nesting.
+-Nested logic, which gives the developer the opportunity to communicate the desired organisation and links among various components of the 
+code, can improve the readability and maintainability of code.
+- Coding is more easily modularized, resued, and maintainable when it is organised into layered components.
+
+Ans 3) - Using a chain of "if" possible course of action structures may be ineffective in some circumstances.
+- Repetiive "if" statements can result in processing that is unneeded and slow down performance.
+- Adding more "if" statements to a programme without including a "else if" clause can complicate the code's structure.
+- The code would have to check each condition separately if there were no "else if" instructions, adding additional execution cost.
+- The "if/else if" alternative path logic is preferable when several conditions and various actions based on those conditions are involved since it 
+offers better code organisation, maintainability, and performance. 

@@ -1,0 +1,39 @@
+/*/////////////////////////////////////////////////////////////////////////
+                          Workshop - #2 (P2)
+Full Name  : Dev Kshitij Patel
+Student ID#: 142979228
+Email      : dkpatel59@myseneca.ca
+Section    : IPC144 - ZBB
+
+Authenticity Declaration:
+
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+/////////////////////////////////////////////////////////////////////////*/
+
+Ans 1) Price 1's value is saved as a float data type, therefore it does not 
+           accurately reflect the intended value, nor does the converted cent value
+          that goes along with it. A value loses some information when it is stored as a
+          float data type then cast as an integer. The output will not be what the user 
+        anticipates as a result of this. On the other hand, when a double value is forced 
+         to become an integer number, it returns its closest form. it may be slightly less or 
+          equal to that number.
+
+Ans 2)There is no data loss or value change when an integer variable is transformed as 
+          a double variable. Integer data types contain less information than double data types, 
+         hence this is why. The additional space in the double datatype does not affect the value 
+         of the integer data type when it is promoted.
+
+Ans 3) 1)Since the variable "result" must be saved as an integer data type, its value is 72. 
+                The closest value to 72, which is the result of casting the true answer, 72.45, into an integer.
+
+            2)The values are:a) 0.00
+                                             b)72
+                                             c)0.00
+                                             d)72
+
+            3)The data type used in examples 1 and 3's printf function is double. The integer'result' is used 
+              to store the variable. As a result, the value displayed is 0, since a double value cannot be stored as 
+              an integer but can instead be stored as a double data type.
+

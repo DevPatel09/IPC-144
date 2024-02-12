@@ -1,0 +1,50 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #6
+Full Name  : Dev Kshitij patel
+Student ID#: 142979228
+Email      : dkpatel59@myseneca.ca
+Section    : ZBB
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+Answer 1
+"For" loops, "while" loops, and "do-while" loops are the three forms of iteration constructions frequently used in programming.
+The precise constraints of the task at hand determine which iteration construct should be used.
+"while" loops and "do-while" loops are similar, the latter checks the condition at the conclusion of each iteration.
+The choice of the preferable iteration construct frequently depends on readability, maintainability, and the particular
+ requirements of the work, even while it is true that in many circumstances any of these structures can be used to produce the same effect.
+For iterating over an array's items, "for" loops are often preferred when working with arrays since they offer a simple and 
+straightforward syntax in a deliberate manner.
+
+
+Answer 2
+The subsequent actions were conducted in order to test and troubleshoot the programme:
+Initial Testing: 
+A variety of inputs were used to run the programme and check for syntax problems and proper user prompting.
+
+Reviewing the Logic of the Code: The code was examined to find any logical flaws or inconsistent operations.
+
+ Debugging Tools: Potential problems were examined by looking at variables and their values at various stages 
+with the aid of debugging tools like breakpoints and variable watches.
+
+ Code Review: Peer code reviews were carried out to get other viewpoints and suggestions for enhancements.
+
+Through the use of these testing and debugging techniques, any syntax errors were found by the compiler or 
+interpreter, while semantic issues, such as improper behaviour or calculations, were found through careful review,
+ examination of error messages, and comparison of the program's output to anticipated results.
+
+Answer 3
+Open the given output.txt file to view the output that your programme produced.
+Open the w6p2_master_output.txt file to view the program's anticipated output.
+In your output.txt file, find line number 6 as shown in the error response.
+Find the character's ASCII code in your output.txt file and contrast it with the anticipated
+ ASCII value given in the error feedback. The character at column 33 in line 6 of your 
+output.txt file in this case, according to the error message, should be the ASCII code for 
+the character '0,' which is 48. Check to see if the character in column 33 in line 6 now
+ corresponds to the anticipated '0' (ASCII code 48) as stated in the error message.
+

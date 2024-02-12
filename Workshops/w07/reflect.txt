@@ -1,0 +1,84 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #7
+Full Name  : Dev Kshitij Patel
+Student ID#: 142979228
+student email: dkpatel59@myseneca.ca
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+Ans 1) Yes, i was successful in coding non-repetitive sections of logic in the game
+play portion, this include displaying the player position, displaying the game board,
+and providing game updates. How this is done is illustrated below:
+-First of all, the positions on the game board are iterated over in a loop in the
+ programming. GameInfo.pLength to 1 is the range of the loop variable n.
+The conditional statement that determines if the integer n at the current place
+ is divisible by 10 is found inside the loop (n% 10 == 0). If so, the code publishes 
+the position number's tens digit using (int)n / 10. If the position number is not 
+divisible by 10, the code prints the separator '|'.
+
+Repeating this procedure results in a ruler-like representation for each position on the board.
+
+Thus, to solve this problem, i have used for iteration and used if-else in it to determine 
+the postion or drawing of the ruler.
+
+-To display the player postion, i have used an array called as presentPosition.
+The player's positions are historically recorded by the programming using an array called presentPosition.
+ A array is used as its initialization. If the current position in presentPosition has been marked as "V" (visited), 
+the code in the main game loop checks to see if that is true. This is verified by the statement if (presentPosition[m] == 'V').
+When the condition is met, the code increases the count variable because it signifies the player has already been to that location.
+The code examines whether count is zero after the loop. If not, the code produces a new line because it signifies no positions have
+ been marked as visited. The code continues to output the visited positions if count is not zero, indicating that there are visited positions.
+Following that, the code iterates through the presentPosition array once more, printing each position marker ('V' for visited) or a space (' ')
+ if the position hasn't yet been visited.
+
+-To solve the problem regarding object found when  player visited is done by using if-else and an array.
+ The objects existing at each location on the game board are stored in the code using an objectPosition array. It begins with an array of dashes ('-').
+The code prints the appropriate character ('-', '&', '!', '$', or '.') for each item in the objectPosition array inside the main game loop.
+The item at each location on the game board determines the character: '-' for empty positions, '&' for positions with both bombs and treasures,
+ '!' for positions with bombs, '$' for positions with treasures, and '.' for other visited spots.
+The loop makes sure that the objects are presented on the game board appropriately for the current situation.
+
+-To solve the problem regarding game updates, i have used variable such as 'remainingLives', 'playerInfo.treasureCount', and 'remainingMoves'.
+This variables helpls to store and update the whole game. There is an if-else cases to determine the object position, i.e there is a bomb or treasure
+or both or neither, where the values of this varibale which are mentioned above will change and get updated. For eg. if there is a bomb,then
+remaningLives-- , objectPosition[nextMove - 1]='!'. This means that lives is reduced by 1 and the postion of object is !
+ 
+
+Ans 2) Using structures, we have combine related variables into a single entity.
+The player structure in this program is used to keep track of the player's character symbol, number of lives, total amount of  treasure,and position history.
+The game structure is used to hold data about the game setup, such as the number of moves, bomb placements, and treasure placements, as well as
+ the length of the path and the number of moves. We can organise and control linked variables more efficiently by using structures. By containing these
+ variables within the appropriate structure rather than dispersing them throughout the code, we can improve the organisation and readability of the code.
+Additionally, it is easier to maintain the code when modifications to the structure can be made in one location, such as by adding new members or changing existing ones.
+Complex data structures can be created using structures to represent the relationships between various elements. The playerInfo structure in this programm
+ has an array called positionHistory that records the player's prior positions. We can simply update and retrieve this array by using a structure to describe the player,
+ which enables features like determining whether the player has ever been in a particular position. It would be more difficult and error-prone to manage and retrieve such connected data without structures.
+
+Overall, using structures makes the program easier to understand by grouping relevant variables, easing data management, increasing code reuse, improving maintainability,
+ and enabling more functionality. It offers a systematic and effective method for handling and manipulating data, which enhances code readability and makes the program
+ easier to create, comprehend, and maintain.
+
+Ans 3) The maximum number of nesting (deepest) is three. 
+
+do {
+  //this is level 1 nesting.
+
+    for (m = 0; m < gameInfo.pLength; m++) {
+        // this is level 2 nesting.
+
+        if (presentPosition[m] == 'V') {
+            // this is level 3 nesting.
+        }
+    }
+} while (remainingMoves >= 0 && remainingLives >= 0);
+
+
+
+
+
+
+
